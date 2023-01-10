@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="rodape.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="https://kit.fontawesome.com/b51e2459d8.js" crossorigin="anonymous"></script>
+    <script src="form.js"></script>
+</head>
+
+<body class="tema">
+
+    <header>
+
+
+        <!--Botão hamburguer Menu-->
+
+
+        <input type="checkbox" id="bt_menu">
+        <label for="bt_menu">&#9776;</label>
+
+        <!--Menu-->
+
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Início</a></li>
+
+                <li><a href="#">Sobre nós</a>
+                    <ul>
+                        <li><a href="#">Nossa História</a></li>
+                        <li><a href="#">Integrantes</a></li>
+
+                    </ul>
+                </li>
+
+
+                <li><a href="#">Animes</a>
+                    <ul>
+                        <li><a href="#">Vídeos</a></li>
+                        <li><a href="#">Mangás</a></li>
+
+                    </ul>
+                </li>
+
+                <li><a href="#">Cadastro</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+
+
+            <!--Caixa de busca-->
+            <!--icone é do font awesome-->
+
+            <form class="cx-pesquisa" action="#" method="post">
+                <input type="text" name="pesquisa" id="pesquisa" placeholder="Faça sua busca" required>
+                <button class="button-pesquisa" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+
+
+        </nav>
+
+
+        <div class="header-conteudo">
+            <img class="" src="img/logo-png.png" alt="Imagem principal">
+            <p class="" role="texto">O Anime se tornou uma sensação global nos últimos anos. Alguns anos atrás, o número
+                de fãs era bastante reduzido, porém, esse número hoje em dia aumentou cerca de dez vezes,
+                graças aos animes Shonen, como Naruto, Bleach, entre outros. Mas à medida que esse número aumentou, a
+                procura por animes também aumentou, principalmente uma forma de ver esses animes
+                gratuitamente.<br><br>Criado por e para fãs, o Anime Channel é um site que disponibiliza
+                grátis e legalmente episódios de animes.</p>
+
+            <button id="btn-troca-tema">Login</button>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <!--Role: Faz com que uma tag html se comporte como outra, a partir da funcionalidade... ex: fazer uma div se comportar como um botão -->
+
+        <br><br><br>
+        <section id="section-imagem" class="container">
+
+            <div class="section-textos">
+                <h2>Dr. Stone</h2>
+                <p role="texto">Quando tudo já parecia completamente perdido e a humanidade não teria mais salvação,
+                    Senku, um gênio, tenta restaurar o que ainda resta do mundo e faz de tudo para salvar os humanos
+                    após uma luz misteriosa petrificar todos.</p>
+            </div>
+
+            <img class="img-stone" src="img/Dr. Stone.jpg" width=500 alt="">
+
+        </section>
+
+        <section id="section-video" class="container">
+            <div class="video-frame" aria-hidden="true">
+                <iframe width="460" height="215" src="https://www.youtube.com/embed/a9tq0aS5Zu8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="section-textos">
+                <h2 id="h2-demon">Demon Slayer</h2>
+                <p role="texto">A história acontece em torno de Tanjiro Kamado, que vive uma viagem em busca da salvação
+                    da irmã Nezuko, que foi atacada por demônios. A trama trabalha efeitos especiais sensacionais
+                    durante a ação de maneira única e detalha a história de cada personagem.</p>
+            </div>
+
+        </section>
+
+
+        <section id="section-galeria" class="container">
+            <div class="container section-texto">
+
+                <h2>Confira os animes mais visualizados</h2>
+                <ul class="galeria-container" role="galeria">
+                    <li class="galeria-imagem">
+                        <img src="img/one piece.jpg" alt="">
+                    </li>
+                    <li class="galeria-imagem">
+                        <img src="img/Jujutsu Kaisen.jpg" alt="">
+                    </li>
+                    <li class="galeria-imagem">
+                        <img src="img/naantsu2.jpg" alt="">
+                    </li>
+                    <li class="galeria-imagem">
+                        <img src="img/dragon ball 2.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+
+
+
+
+        <!--Formulário-->
+
+        <section id="section-form" class="container">
+
+
+            <h2>Fique por dentro das séries e desenhos mais assistidos</h2>
+
+            <p>Uma das principais vantagens está na possibilidade de
+                ver os desenhos dublados em português, japonês, inglês e em outros idiomas. Isso sem falar na opção de
+                conferir os vídeos em diferentes dispositivos.</p>
+
+            <div class="form-conteudo">
+                <h3>Venha se entreter com as histórias mais épicas e <span>inesquecíveis</span>
+                </h3>
+
+                <div class="form-container">
+                    <form>
+
+                        <label for="txtName">Nome Completo</label>
+                        <input type="text" name="name" id="txtName" onclick="valida1()" required>
+
+                        <label for="txtEmail">E-mail</label>
+                        <input type="email" name="email" id="txtEmail" onclick="valida2()" required>
+
+                        <label for="txtEmail">Senha</label>
+                        <input type="password" name="password" id="txtEmail" onclick="valida3()" required>
+
+                        <label for="txtCharacter">Mensagem</label>
+                        <textarea name="character" cols="30" rows="10" id="txtCharacter" onclick="valida4()"></textarea>
+
+                        <button type="button" id="btnSubscribe" onclick="valida5()">Me inscrever</button>
+
+                    </form>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- <footer>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit perspiciatis voluptas eos autem molestiae
+            adipisci. Magnam quisquam necessitatibus explicabo et debitis, recusandae architecto animi qui, ut quam
+            dolor
+            deleniti amet.</p>
+        <img src="img/logo-png.png" alt="">
+
+    </footer> -->
+
+
+    <footer>
+
+
+        <div class="boxs">
+            <h2>Início</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Download</a></li>
+            </ul>
+
+        </div>
+        <div class="boxs">
+            <h2>Informações</h2>
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Email</a></li>
+            </ul>
+
+        </div>
+        <div class="boxs">
+            <h2>Suporte</h2>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Telefone</a></li>
+                <li><a href="#">Chat</a></li>
+            </ul>
+        </div>
+
+        <div class="boxs">
+            <h2>Sobre nós</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet necessitatibus impedit assumenda.</p>
+        </div>
+
+    </footer>
+
+    <div class="footer ft-inferior">
+        <h2>ANIME CHANNEL</h2>
+        <div class="sociais">
+            <div class="social"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+            <div class="social"><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+            <div class="social"><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
